@@ -1,0 +1,123 @@
+.modal {
+    position: fixed;
+    height: 70vh;
+    width: 55vw;
+    top: 20vh;
+    left: 25vw;
+    overflow: hidden;
+    background-color: white;
+}
+
+.modalTop {
+    height: 55%;
+    padding: 15px 15px 15px 15px;
+    justify-content: space-between;
+}
+
+.modalLeft {
+    flex: 0 0 35%;
+    overflow: hidden;
+}
+
+.modalAvt {
+    width: 17.5vw;
+    height: calc(70vh * 0.55);
+    overflow: hidden;
+}
+
+.modalRight {
+    flex: 0 0 60%;
+    overflow: hidden;
+}
+
+.modalName {
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 30px;
+    color: #ff2f2f;
+}
+
+.modalPosition {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.container {
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    color: #025a93;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.modalMajor {
+    padding: 0px 15px 15px 15px;
+}
+
+.avt_container {
+    border-radius: 5px 5px;
+    overflow: hidden;
+}
+
+.avt {
+    width: 12vw;
+    height: 35vh;
+}
+
+.layer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.8s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+}
+
+.name {
+    background-color: white;
+    height: 4vh;
+    line-height: 4vh;
+    font-weight: bold;
+}
+
+.container:hover .layer {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: flex;
+    transition: all 1.2s linear;
+    opacity: 0;
+    margin: auto;
+    font-weight: bold;
+    color: white;
+}
+
+.container:hover .layer .button {
+    opacity: 1;
+}
+
+.button {
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    margin: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    position: relative;
+    top: 1vh;
+    margin-right: 10px;
+}

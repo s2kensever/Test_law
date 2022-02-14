@@ -1,0 +1,38 @@
+.container {
+    width: 50vw;
+    text-align: left;
+    overflow: hidden;
+}
+
+.authorContainer {
+    background-color: #dddfe1;
+    height: 5vh;
+}
+
+.imgContainer {
+    cursor: pointer;
+}
+
+.img {
+    height: 35vh;
+    width: 100%;
+}
+
+.icon {
+    color: #088cda;
+    position: relative;
+    top: 0.5vh;
+    margin-right: 0.5vw;
+}
+
+.button {
+    color: #025a8e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.title {
+    cursor: pointer;
+    color: #025a8e;
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+.InputFiledLable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(110, 110, 110);
+    margin: 20px 0;
+}
+.err{
+    font-size: 14px;
+    color: red;
+    margin-left: 5px;
+}

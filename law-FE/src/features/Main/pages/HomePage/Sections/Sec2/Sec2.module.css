@@ -1,0 +1,106 @@
+.img {
+    width: 2000px;
+    height: 30vh;
+}
+
+.container {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
+
+.imgContainer {
+    height: 40vw;
+    overflow: hidden;
+}
+
+.left {
+    margin-top: 0;
+    height: 100%;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #dce7e2;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+}
+
+.table {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.title {
+    position: relative;
+    top: 20vh;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.text {
+    position: relative;
+    top: 24vh;
+    font-size: 17px;
+}
+
+hr {
+    color: #dce7e2;
+    position: relative;
+    top: 25vh;
+    width: 25vw;
+}
+
+.item {
+    width: 12vw;
+    height: 26vh;
+    transition: all 0.4s;
+}
+
+.item.item1 {
+    background-color: #e7e7e7;
+}
+
+.item.item2 {
+    background-color: #e0dfdf;
+    opacity: 0.9;
+}
+
+.icon {
+    margin-top: 9vh;
+    margin-bottom: 3vh;
+}
+
+.item_name {
+    font-size: 22px;
+    color: #3891c5;
+}
+
+.item:hover {
+    background-color: #3891c5;
+    cursor: pointer;
+}
+
+.item:hover .item_name {
+    color: white;
+    transition: all 0.4s;
+}
+
+.item:hover svg {
+    color: white;
+}
+
+.item:hover svg {
+    transform: scale(1.4);
+    transition: all 0.5s ease-in-out;
+}

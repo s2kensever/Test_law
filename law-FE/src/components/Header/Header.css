@@ -1,0 +1,262 @@
+.Header {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    color: white;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.scrolling {
+    transition: all 0.8s;
+    background-color: #e3e5e9;
+    height: 8vh;
+    color: #032147;
+}
+
+.H-info {
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.H-infoItem {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.H-infoItem div {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.H-infoItem div span {
+    margin-left: 5px;
+}
+
+.H-infoItem p {
+    margin-top: 5px;
+}
+
+.H-boderRight {
+    border-right: #334d6b solid 1px;
+}
+
+.H-btn {
+    display: flex;
+    align-items: center;
+}
+
+.H-btn .H-button {
+    background-color: #fdb606;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.H-btn .H-button span {
+    margin-left: 5px;
+}
+
+.H-btn .H-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.H-btn .H-user .icon-user {
+    display: flex;
+    background-color: #fdb606;
+    /* border-radius: 50%; */
+    border-radius: 5px 0 0 5px;
+    z-index: 10;
+}
+
+.H-btn .H-user span {
+    background-color: #fdb606;
+    padding: 11px;
+    /* margin-left: -24px; */
+    border-radius: 0 5px 5px 0;
+}
+
+.H-nav {
+    height: auto;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.H-nav img {
+    height: 60px;
+}
+
+.H-nav .H-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+
+.H-nav .H-menu li {
+    margin: 0 15px;
+}
+
+.H-nav .H-menu .LinkItem {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.scrollingColor {
+    color: #032147;
+}
+
+.NavItem {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30px 0;
+    color: white;
+}
+
+.H-DownIcon {
+    display: flex;
+    align-items: center;
+}
+
+.H-UpIcon {
+    display: none;
+}
+
+.NavItem:hover .H-UpIcon {
+    display: flex;
+    align-items: center;
+}
+
+.NavItem:hover .H-DownIcon {
+    display: none;
+}
+
+.H-subMenu {
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    background-color: #16365f;
+}
+
+.NavItem:hover .H-subMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -20px;
+    width: 150px;
+    top: 8vh;
+    list-style: none;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.H-subItem {
+    width: 150px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.H-subLink {
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+.H-subItem:hover .H-subLink {
+    color: #fdb606;
+}
+
+a.LinkItem {
+    color: white;
+}
+
+a.LinkItem:hover {
+    color: #2d78a3;
+}
+
+a.LinkItem.scrollingColor {
+    color: #2d78a3;
+}
+
+a.LinkItem.scrollingColor:hover {
+    color: #103057;
+}
+
+.btn-scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fdb606;
+    border-radius: 50%;
+    color: #333;
+    padding: 5px;
+    z-index: 11;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-scrollTop:hover {
+    color: #fff;
+    background-color: #002147;
+}
+
+.rp-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    .H-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .H-btn {
+        display: none;
+    }
+    .H-infoItem {
+        display: none;
+    }
+    .H-nav {
+        display: none;
+    }
+    .rp-mobile {
+        display: flex;
+    }
+    .rp-mobile img {
+        height: 60px;
+    }
+    .btn-scrollTop {
+        bottom: 100px;
+    }
+}

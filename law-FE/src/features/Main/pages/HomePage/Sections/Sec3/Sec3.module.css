@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px 30px 0px;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+}
+
+.title {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #025a93;
+}
+
+.text {
+    margin-top: 5vh;
+    font-size: 17px;
+    width: 35vw;
+}
+
+.hr {
+    border-bottom: 2px solid #dce7e2;
+    width: 70px;
+    margin-top: 20px;
+}
+
+.right {
+    width: 50%;
+}
+
+.table {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 45%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.item .item {
+    margin: auto;
+    width: 80%;
+    height: 14vh;
+    padding-bottom: 20%;
+    padding-top: 10%;
+    /* margin-top: 50%;
+    transform: translateY(50%); */
+}
+
+.item.item1 {
+    background-color: #1a2431;
+    color: white;
+}
+
+.item.item2 {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.item.item1 .item {
+    border: 3px solid #fff;
+}
+
+.item.item2 .item {
+    border: 3px solid #1a2431;
+}
+
+.item.item:hover {
+    cursor: pointer;
+}
+
+.item.item1:hover .item {
+    border: none;
+    transition: border 1s;
+}
+
+.item.item2:hover .item {
+    transition: border 1s;
+    border: none;
+}
+
+svg {
+    transition: all 0.5s ease-in-out;
+}
+
+.item.item1:hover .item svg {
+    transform: scale(1.1);
+}
+
+.item.item2:hover .item svg {
+    transform: scale(1.1);
+}
+
+.icon {
+    margin: auto;
+}
+
+.button {
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border: 1px solid #025a93;
+    color: #025a93;
+    padding-left: 2vw;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #025a93;
+    color: white;
+    border: 1px solid white;
+}

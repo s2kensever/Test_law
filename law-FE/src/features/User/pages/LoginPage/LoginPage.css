@@ -1,0 +1,53 @@
+.LoginPage {
+    width: 600px;
+    margin: 12vh auto;
+}
+
+.form-header-login h2 {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-weight: 900;
+    position: relative;
+}
+
+.form-header-login p {
+    text-align: center;
+}
+
+.form-header-login h2::before {
+    background: #ffb606 none repeat scroll 0 0;
+    top: 50px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 125px;
+    z-index: 1;
+}
+
+.login_redirect {
+    display: flex;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.bnt_login {
+    margin: 20px 0;
+}
+
+.login_link {
+    color: #002147;
+    text-decoration: none;
+}
+
+.login_link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 760px) {
+    .LoginPage {
+        width: 90%;
+        margin: 40px auto;
+    }
+}
